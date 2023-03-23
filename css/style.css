@@ -87,13 +87,6 @@ header {
     border:1px solid black;
 }
 
-@media screen and (min-width: 60em) {
-    figure {
-        display:grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-
 #lit div p:nth-child(3n + 1):first-letter {
     color: #3267a1;
     background-image: radial-gradient(#fff, #a3721c);
@@ -109,7 +102,21 @@ header {
     border-bottom-right-radius: 0.2em;
 }
 
-*/Tablet Size */
+
+
+#lit div {
+    max-width: 100%;
+    columns: 20rem;
+}
+
+@media screen and (min-width: 80em) {
+/*Tablet Size */
+
+    figure {
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
     figcaption {
             display :flex;
             justify-content: center;
@@ -121,19 +128,15 @@ header {
     figure img {
         width: 100%;
     }
-
-    #lit div {
-        max-width: 100%;
-        columns: 20rem;
-    }
 }
 
 /* Large Screen Size */
 
 @media screen and (min-width: 100em) {
+
     #gallery {
         display: grid;
-        grid-template-columns: 1fn 1fn 1fn;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     hr {
